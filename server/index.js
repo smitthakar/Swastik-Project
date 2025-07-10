@@ -1,7 +1,7 @@
-import express from 'express';
-import mongoose from 'mongoose';
-import cors from 'cors';
-import dotenv from 'dotenv';
+import express from "express";
+import mongoose from "mongoose";
+import cors from "cors";
+import dotenv from "dotenv";
 
 // Load environment variables
 dotenv.config();
@@ -16,10 +16,12 @@ app.use(express.json());
 // MongoDB connection
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/innovatex');
-    console.log('MongoDB connected successfully');
+    await mongoose.connect(
+      process.env.MONGODB_URI || "mongodb://localhost:27017/Swastik"
+    );
+    console.log("MongoDB connected successfully");
   } catch (error) {
-    console.error('MongoDB connection error:', error);
+    console.error("MongoDB connection error:", error);
     process.exit(1);
   }
 };
@@ -51,18 +53,23 @@ const contactSchema = new mongoose.Schema({
 });
 
 // Create model
-const Contact = mongoose.model('Contact', contactSchema);
+const Contact = mongoose.model("Contact", contactSchema);
 
 // API routes
-app.post('/api/contact', async (req, res) => {
+app.post("/api/contact", async (req, res) => {
   try {
     const { name, email, phone, subject, message } = req.body;
-    
+
     // Validate required fields
     if (!name || !email || !message) {
-      return res.status(400).json({ success: false, message: 'Please provide name, email, and message' });
+      return res
+        .status(400)
+        .json({
+          success: false,
+          message: "Please provide name, email, and message",
+        });
     }
-    
+
     // Create new contact submission
     const newContact = new Contact({
       name,
@@ -71,20 +78,22 @@ app.post('/api/contact', async (req, res) => {
       subject,
       message,
     });
-    
+
     // Save to database
     await newContact.save();
-    
-    res.status(201).json({ success: true, message: 'Message sent successfully' });
+
+    res
+      .status(201)
+      .json({ success: true, message: "Message sent successfully" });
   } catch (error) {
-    console.error('Error saving contact form:', error);
-    res.status(500).json({ success: false, message: 'Server error' });
+    console.error("Error saving contact form:", error);
+    res.status(500).json({ success: false, message: "Server error" });
   }
 });
 
 // Health check endpoint
-app.get('/api/health', (req, res) => {
-  res.status(200).json({ status: 'OK', message: 'Server is running' });
+app.get("/api/health", (req, res) => {
+  res.status(200).json({ status: "OK", message: "Server is running" });
 });
 
 // Start server

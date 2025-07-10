@@ -136,7 +136,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-dark-800 dark:text-dark-200">Email Us</h3>
-                    <a href="mailto:info@innovatex.com" className="text-dark-600 dark:text-dark-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">info@innovatex.com</a>
+                    <a href="mailto:smitofficial789@gmail.com" className="text-dark-600 dark:text-dark-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">smitofficial789@gmail.com</a>
                   </div>
                 </div>
                 
@@ -146,7 +146,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-dark-800 dark:text-dark-200">Call Us</h3>
-                    <a href="tel:+11234567890" className="text-dark-600 dark:text-dark-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">+1 (123) 456-7890</a>
+                    <a href="tel:+91 9824312924" className="text-dark-600 dark:text-dark-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">+91 9824312924</a>
                   </div>
                 </div>
                 
@@ -238,7 +238,7 @@ const Contact: React.FC = () => {
                           ? 'border-red-500 dark:border-red-500 focus:ring-red-500 dark:focus:ring-red-500' 
                           : 'border-dark-300 dark:border-dark-600 focus:ring-primary-500 dark:focus:ring-primary-500'
                       } bg-white dark:bg-dark-700 text-dark-800 dark:text-white focus:outline-none focus:ring-2 transition-colors`}
-                      placeholder="John Doe"
+                      placeholder="Enter your name"
                     />
                     {errors.name && <p className="mt-1 text-sm text-red-500">{errors.name}</p>}
                   </div>
@@ -256,7 +256,7 @@ const Contact: React.FC = () => {
                           ? 'border-red-500 dark:border-red-500 focus:ring-red-500 dark:focus:ring-red-500' 
                           : 'border-dark-300 dark:border-dark-600 focus:ring-primary-500 dark:focus:ring-primary-500'
                       } bg-white dark:bg-dark-700 text-dark-800 dark:text-white focus:outline-none focus:ring-2 transition-colors`}
-                      placeholder="john@example.com"
+                      placeholder="Enter your email address"
                     />
                     {errors.email && <p className="mt-1 text-sm text-red-500">{errors.email}</p>}
                   </div>
@@ -272,7 +272,7 @@ const Contact: React.FC = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-2 rounded-md border border-dark-300 dark:border-dark-600 bg-white dark:bg-dark-700 text-dark-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-500 transition-colors"
-                      placeholder="+1 (123) 456-7890"
+                      placeholder="Enter your phone number"
                     />
                   </div>
                   
@@ -347,8 +347,8 @@ const Contact: React.FC = () => {
         <AnimatedSection>
           <div className="bg-white dark:bg-dark-800 rounded-lg shadow-xl overflow-hidden">
             <div className="aspect-w-16 aspect-h-9 w-full h-96">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059445135!2d-74.25986613799748!3d40.69714941774136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1655393795429!5m2!1sen!2sca"
+              <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14690.850507577574!2d72.6532378492847!3d22.997592617057176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87cf76479217%3A0xbe50540453c71a8c!2sVastral%2C%20Ahmedabad%2C%20Gujarat%20380038!5e0!3m2!1sen!2sin!4v1752125939398!5m2!1sen!2sin" 
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

@@ -64,7 +64,7 @@ const Header: React.FC = () => {
             <NavLink to="/" className="flex items-center">
               <Globe className="h-8 w-8 text-primary-600 dark:text-primary-400" />
               <span className="ml-2 text-xl font-bold text-primary-800 dark:text-white">
-                InnovateX
+                Swastik
               </span>
             </NavLink>
           </div>
@@ -79,7 +79,7 @@ const Header: React.FC = () => {
                   relative text-base font-medium transition-colors duration-300
                   ${isActive 
                     ? 'text-primary-600 dark:text-primary-400' 
-                    : 'text-dark-700 dark:text-dark-200 hover:text-primary-600 dark:hover:text-primary-400'}
+                    : 'text-black-700 dark:text-dark-200 hover:text-primary-600 dark:hover:text-primary-400'}
                 `}
               >
                 {({ isActive }) => (

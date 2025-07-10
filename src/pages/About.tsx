@@ -6,25 +6,25 @@ import AnimatedSection from '../components/utils/AnimatedSection';
 const About: React.FC = () => {
   const teamMembers = [
     {
-      name: 'John Smith',
-      position: 'CEO & Founder',
+      name: 'Vaidik Limbachiya',
+      position: 'Co-Founder',
       image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       bio: 'With over 15 years of experience in the tech industry, John leads our company with vision and strategic direction.'
     },
     {
-      name: 'Sarah Johnson',
+      name: 'Darshan Sarvaiya',
       position: 'CTO',
       image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       bio: 'Sarah brings technical excellence and innovation to our team, ensuring we stay at the cutting edge of technology.'
     },
     {
-      name: 'Michael Chen',
+      name: 'Smit Thakar',
       position: 'Creative Director',
       image: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       bio: "Michael's eye for design and user experience has shaped our signature aesthetic and approach to digital products."
     },
     {
-      name: 'Emily Williams',
+      name: 'Jay Vaghela',
       position: 'Head of Marketing',
       image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       bio: 'Emily crafts our brand story and ensures our message reaches the right audience with maximum impact.'
@@ -45,10 +45,10 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
               <h1 className="text-4xl md:text-5xl font-bold text-primary-800 dark:text-primary-300 mb-6">
-                About InnovateX
+                About Swastik
               </h1>
               <p className="text-dark-600 dark:text-dark-300 text-lg mb-6">
-                Founded in 2010, InnovateX has grown from a small startup to a leading digital solutions provider. Our journey has been defined by innovation, quality, and a relentless focus on client success.
+                Founded in 2010, Swastik has grown from a small startup to a leading digital solutions provider. Our journey has been defined by innovation, quality, and a relentless focus on client success.
               </p>
               <p className="text-dark-600 dark:text-dark-300 text-lg">
                 We believe in harnessing the power of technology to solve complex business challenges and create meaningful digital experiences that drive growth and engagement.
@@ -97,7 +97,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Company Values */}
-      <section className="section-container bg-primary-50 dark:bg-dark-900/30 py-16 md:py-24 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
+      <section className="section-container bg-primary-50 dark:bg-dark-900/30 py-16 md:py-24 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 lg:mx-auto">
         <AnimatedSection>
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="section-title">Our Values</h2>
@@ -205,7 +205,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Company Timeline */}
-      <section className="section-container">
+      {/* <section className="section-container">
         <AnimatedSection>
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="section-title">Our Journey</h2>
@@ -228,7 +228,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="md:col-span-3 md:pl-8 bg-white dark:bg-dark-800 p-6 rounded-lg shadow-md">
                   <p className="text-dark-600 dark:text-dark-300">
-                    InnovateX was founded with a mission to provide quality web development services to small businesses. Starting with just 3 team members, we worked from a small office space focusing on local clients.
+                    Swastik was founded with a mission to provide quality web development services to small businesses. Starting with just 3 team members, we worked from a small office space focusing on local clients.
                   </p>
                 </div>
               </div>
@@ -288,14 +288,14 @@ const About: React.FC = () => {
                 </div>
                 <div className="md:col-span-3 md:pl-8 bg-white dark:bg-dark-800 p-6 rounded-lg shadow-md">
                   <p className="text-dark-600 dark:text-dark-300">
-                    InnovateX was recognized as one of the top digital solution providers globally. With offices in three countries and a team of over 100 professionals, we continue to drive innovation in the digital space.
+                    Swastik was recognized as one of the top digital solution providers globally. With offices in three countries and a team of over 100 professionals, we continue to drive innovation in the digital space.
                   </p>
                 </div>
               </div>
             </AnimatedSection>
           </div>
         </div>
-      </section>
+      </section> */}
     </motion.div>
   );
 };

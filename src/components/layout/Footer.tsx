@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center mb-6">
               <Globe className="h-8 w-8 text-primary-400" />
-              <span className="ml-2 text-2xl font-bold text-white">InnovateX</span>
+              <span className="ml-2 text-2xl font-bold text-white">Swastik</span>
             </div>
             <p className="text-dark-300 mb-6">
               Transforming ideas into digital realities. We build innovative solutions that drive business growth.
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 text-primary-400 mr-3 flex-shrink-0" />
-                <a href="mailto:info@innovatex.com" className="text-dark-300 hover:text-primary-400 transition-colors">info@innovatex.com</a>
+                <a href="mailto:info@Swastik.com" className="text-dark-300 hover:text-primary-400 transition-colors">info@Swastik.com</a>
               </li>
             </ul>
           </div>
@@ -101,7 +101,7 @@ const Footer: React.FC = () => {
 
         <div className="pt-8 mt-8 border-t border-dark-700 flex flex-col md:flex-row justify-between items-center">
           <p className="text-dark-400 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} InnovateX. All rights reserved.
+            © {new Date().getFullYear()} Swastik. All rights reserved.
           </p>
           <button
             onClick={scrollToTop}
