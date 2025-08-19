@@ -82,14 +82,14 @@ const Home: React.FC = () => {
           </div>
         </div>
         <motion.div 
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1, repeat: Infinity, repeatType: 'reverse' }}
+          // className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10"
+          // initial={{ opacity: 0, y: 10 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.6, delay: 1, repeat: Infinity, repeatType: 'reverse' }}
         >
-          <div className="w-8 h-12 border-2 border-white/30 rounded-full flex justify-center">
+          {/* <div className="w-8 h-12 border-2 border-white/30 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-white/60 rounded-full mt-2"></div>
-          </div>
+          </div> */}
         </motion.div>
       </section>
 

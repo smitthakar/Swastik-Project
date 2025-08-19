@@ -92,7 +92,7 @@ const Header: React.FC = () => {
                       />
                     )}
                   </>
-                )}
+                )} 
               </NavLink>
             ))}
             <button
