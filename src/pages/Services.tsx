@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check, Code, Database, Globe, Layers, LayoutGrid, Smartphone, Wand2, BarChart2, Server, Zap, MessageSquare } from 'lucide-react';
 import AnimatedSection from '../components/utils/AnimatedSection';
+import spring from "../assets/spring-boot-logo.png"
+import programing from "../assets/programing.png";
+import flutter from "../assets/Flutter.svg";
 
 interface Service {
   id: string;
@@ -398,12 +401,12 @@ const Services: React.FC = () => {
             className="bg-white dark:bg-dark-800 p-6 rounded-lg shadow-md text-center"
           >
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-              alt="TypeScript"
+            src={programing}
+              alt="Angular"
               className="h-16 w-16 mx-auto mb-4"
             />
             <h3 className="font-semibold text-primary-800 dark:text-primary-300">
-              TypeScript
+              Angular
             </h3>
           </AnimatedSection>
 
@@ -412,12 +415,12 @@ const Services: React.FC = () => {
             className="bg-white dark:bg-dark-800 p-6 rounded-lg shadow-md text-center"
           >
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
-              alt="Flutter"
+              src="https://static.vecteezy.com/system/resources/previews/048/332/150/non_2x/java-programming-language-java-logo-free-png.png"
+              alt="java"
               className="h-16 w-16 mx-auto mb-4"
             />
             <h3 className="font-semibold text-primary-800 dark:text-primary-300">
-              Flutter
+              Java
             </h3>
           </AnimatedSection>
 
@@ -426,12 +429,26 @@ const Services: React.FC = () => {
             className="bg-white dark:bg-dark-800 p-6 rounded-lg shadow-md text-center"
           >
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+              src={spring}
               alt="AWS"
               className="h-16 w-16 mx-auto mb-4"
             />
             <h3 className="font-semibold text-primary-800 dark:text-primary-300">
-              AWS
+              Spring Boot
+            </h3>
+          </AnimatedSection>
+
+          <AnimatedSection
+            delay={0.4}
+            className="bg-white dark:bg-dark-800 p-6 rounded-lg shadow-md text-center"
+          >
+            <img
+              src={flutter}
+              alt="Flutter"
+              className="h-16 w-16 mx-auto mb-4"
+            />
+            <h3 className="font-semibold text-primary-800 dark:text-primary-300">
+              Flutter
             </h3>
           </AnimatedSection>
 
@@ -446,20 +463,6 @@ const Services: React.FC = () => {
             />
             <h3 className="font-semibold text-primary-800 dark:text-primary-300">
               Figma
-            </h3>
-          </AnimatedSection>
-
-          <AnimatedSection
-            delay={0.45}
-            className="bg-white dark:bg-dark-800 p-6 rounded-lg shadow-md text-center"
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-              alt="Tailwind CSS"
-              className="h-16 w-16 mx-auto mb-4"
-            />
-            <h3 className="font-semibold text-primary-800 dark:text-primary-300">
-              Tailwind CSS
             </h3>
           </AnimatedSection>
         </div>
