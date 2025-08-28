@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check, Code, Database, Globe, Layers, LayoutGrid, Smartphone, Wand2, BarChart2, Server, Zap, MessageSquare } from 'lucide-react';
 import AnimatedSection from '../components/utils/AnimatedSection';
-import spring from "../assets/spring-boot-logo.png"
 import programing from "../assets/programing.png";
 import flutter from "../assets/Flutter.svg";
 
@@ -429,12 +428,12 @@ const Services: React.FC = () => {
             className="bg-white dark:bg-dark-800 p-6 rounded-lg shadow-md text-center"
           >
             <img
-              src={spring}
-              alt="AWS"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              alt="Python"
               className="h-16 w-16 mx-auto mb-4"
             />
             <h3 className="font-semibold text-primary-800 dark:text-primary-300">
-              Spring Boot
+              Python
             </h3>
           </AnimatedSection>
 
